@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 2,
+    "hidden": 69,
+    "hardened": false
+  },
+  "seed": 4,
+  "dcn_params": 16923,
+  "dcn_test_acc": 0.9927999973297119,
+  "purity_matrix": [
+    [
+      0.978,
+      0.064,
+      0.008,
+      0.008
+    ],
+    [
+      0.054,
+      0.977,
+      0.002,
+      0.002
+    ],
+    [
+      0.006,
+      0.008,
+      0.979,
+      0.006
+    ],
+    [
+      0.009,
+      0.016,
+      0.003,
+      0.941
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.9685946188823193,
+  "purity_offdiag_max": 0.06410580908983819,
+  "state_accuracy_per_node": {
+    "shape": 0.99,
+    "color": 0.994,
+    "size": 0.995,
+    "material": 0.988
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 3,
+      "anchors_used_argmax": 4,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 5,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 2,
+      "anchors_used_argmax": 4,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 2,
+      "anchors_used_argmax": 4,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 2.691909139684867e-05,
+  "mean_routing_graph": [
+    [
+      0.2199999988079071,
+      0.25,
+      0.10999999940395355,
+      0.4300000071525574
+    ],
+    [
+      0.019999999552965164,
+      0.550000011920929,
+      0.03999999910593033,
+      0.38999998569488525
+    ],
+    [
+      0.1899999976158142,
+      0.2800000011920929,
+      0.11999999731779099,
+      0.4099999964237213
+    ],
+    [
+      0.019999999552965164,
+      0.05000000074505806,
+      0.17000000178813934,
+      0.7699999809265137
+    ]
+  ]
+}

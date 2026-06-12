@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 16,
+    "hidden": 57,
+    "hardened": false
+  },
+  "seed": 4,
+  "dcn_params": 16771,
+  "dcn_test_acc": 0.9896000027656555,
+  "purity_matrix": [
+    [
+      0.898,
+      0.111,
+      0.005,
+      0.008
+    ],
+    [
+      0.058,
+      0.968,
+      0.004,
+      0.003
+    ],
+    [
+      0.049,
+      0.144,
+      0.785,
+      0.038
+    ],
+    [
+      0.024,
+      0.083,
+      0.024,
+      0.838
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.8721597396671426,
+  "purity_offdiag_max": 0.14375205141053496,
+  "state_accuracy_per_node": {
+    "shape": 0.946,
+    "color": 0.989,
+    "size": 0.902,
+    "material": 0.939
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 5,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 5,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 8.677536911250172e-09,
+  "mean_routing_graph": [
+    [
+      0.23999999463558197,
+      0.10000000149011612,
+      0.1899999976158142,
+      0.46000000834465027
+    ],
+    [
+      0.17000000178813934,
+      0.36000001430511475,
+      0.11999999731779099,
+      0.3499999940395355
+    ],
+    [
+      0.2800000011920929,
+      0.25,
+      0.07999999821186066,
+      0.38999998569488525
+    ],
+    [
+      0.05000000074505806,
+      0.09000000357627869,
+      0.15000000596046448,
+      0.7099999785423279
+    ]
+  ]
+}

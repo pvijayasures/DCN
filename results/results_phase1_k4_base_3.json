@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 4,
+    "hidden": 67,
+    "hardened": false
+  },
+  "seed": 3,
+  "dcn_params": 16827,
+  "dcn_test_acc": 0.9932000041007996,
+  "purity_matrix": [
+    [
+      0.953,
+      0.077,
+      0.014,
+      0.007
+    ],
+    [
+      0.084,
+      0.939,
+      0.006,
+      0.004
+    ],
+    [
+      0.037,
+      0.032,
+      0.906,
+      0.028
+    ],
+    [
+      0.053,
+      0.031,
+      0.015,
+      0.898
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.9242010226402565,
+  "purity_offdiag_max": 0.0840117857630349,
+  "state_accuracy_per_node": {
+    "shape": 0.972,
+    "color": 0.963,
+    "size": 0.972,
+    "material": 0.966
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 3,
+      "anchors_used_argmax": 5,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 9.97565257421229e-06,
+  "mean_routing_graph": [
+    [
+      0.33000001311302185,
+      0.1899999976158142,
+      0.27000001072883606,
+      0.20999999344348907
+    ],
+    [
+      0.17000000178813934,
+      0.2800000011920929,
+      0.38999998569488525,
+      0.1599999964237213
+    ],
+    [
+      0.23999999463558197,
+      0.28999999165534973,
+      0.20999999344348907,
+      0.25999999046325684
+    ],
+    [
+      0.23000000417232513,
+      0.23999999463558197,
+      0.25,
+      0.2800000011920929
+    ]
+  ]
+}

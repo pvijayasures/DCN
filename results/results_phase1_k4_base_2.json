@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 4,
+    "hidden": 67,
+    "hardened": false
+  },
+  "seed": 2,
+  "dcn_params": 16827,
+  "dcn_test_acc": 0.9919999837875366,
+  "purity_matrix": [
+    [
+      0.89,
+      0.1,
+      0.013,
+      0.04
+    ],
+    [
+      0.055,
+      0.98,
+      0.003,
+      0.005
+    ],
+    [
+      0.093,
+      0.102,
+      0.779,
+      0.044
+    ],
+    [
+      0.025,
+      0.053,
+      0.005,
+      0.862
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.8775441880292496,
+  "purity_offdiag_max": 0.10188700148114185,
+  "state_accuracy_per_node": {
+    "shape": 0.932,
+    "color": 0.992,
+    "size": 0.897,
+    "material": 0.953
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 5,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 4.33768536822754e-06,
+  "mean_routing_graph": [
+    [
+      0.10999999940395355,
+      0.20999999344348907,
+      0.4099999964237213,
+      0.27000001072883606
+    ],
+    [
+      0.1899999976158142,
+      0.14000000059604645,
+      0.36000001430511475,
+      0.3100000023841858
+    ],
+    [
+      0.3199999928474426,
+      0.3400000035762787,
+      0.009999999776482582,
+      0.3400000035762787
+    ],
+    [
+      0.25999999046325684,
+      0.30000001192092896,
+      0.3499999940395355,
+      0.09000000357627869
+    ]
+  ]
+}

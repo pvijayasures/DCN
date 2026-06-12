@@ -1,0 +1,139 @@
+{
+  "config": {
+    "k": 1,
+    "hidden": 70,
+    "task": "hard2"
+  },
+  "seed": 0,
+  "dcn_params": 42719,
+  "dcn_test_acc": 0.39480000734329224,
+  "purity_matrix": [
+    [
+      0.744,
+      0.056,
+      0.013,
+      0.01,
+      0.013
+    ],
+    [
+      0.053,
+      0.736,
+      0.009,
+      0.016,
+      0.005
+    ],
+    [
+      0.03,
+      0.065,
+      0.666,
+      0.258,
+      0.029
+    ],
+    [
+      0.036,
+      0.103,
+      0.387,
+      0.46,
+      0.014
+    ],
+    [
+      0.14,
+      0.029,
+      0.013,
+      0.022,
+      0.168
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material",
+    "node_4": "position"
+  },
+  "purity_diag_mean": 0.5548228496162302,
+  "purity_offdiag_max": 0.3872214634472547,
+  "state_accuracy_per_node": {
+    "shape": 0.89,
+    "color": 0.875,
+    "size": 0.808,
+    "material": 0.736,
+    "position": 0.494
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "position",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0007999999797903001,
+  "rule_violation_soft_mass": 0.0009717235807329416,
+  "mean_routing_graph": [
+    [
+      0.4300000071525574,
+      0.05999999865889549,
+      0.38999998569488525,
+      0.05999999865889549,
+      0.05999999865889549
+    ],
+    [
+      0.20000000298023224,
+      0.15000000596046448,
+      0.3799999952316284,
+      0.17000000178813934,
+      0.10000000149011612
+    ],
+    [
+      0.07000000029802322,
+      0.03999999910593033,
+      0.800000011920929,
+      0.05000000074505806,
+      0.03999999910593033
+    ],
+    [
+      0.1599999964237213,
+      0.11999999731779099,
+      0.3700000047683716,
+      0.25,
+      0.10999999940395355
+    ],
+    [
+      0.1899999976158142,
+      0.20999999344348907,
+      0.27000001072883606,
+      0.1899999976158142,
+      0.15000000596046448
+    ]
+  ]
+}

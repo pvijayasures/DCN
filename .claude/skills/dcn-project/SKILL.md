@@ -84,24 +84,31 @@ orientation only.
 
 | Phase | What | Status | Headline target |
 |---|---|---|---|
-| 0 | MVP | ✅ done | parity + purity — ACHIEVED (see results below) |
-| 1 | k=1 kill-test (k ∈ {1,2,4,8,16}, 5 seeds, param-matched) | 🔜 next | purity gap k=4 vs k=1 ≥ 5 NMI pts, else PIVOT |
-| 2 | Codebook health (thresholded usage, EMA, dead-code reset, m sweep) | ⬜ | alive anchors == true cardinality on ≥3/4 nodes |
+| 0 | MVP | ✅ done | parity + purity — ACHIEVED (5-seed rerun: DCN 0.991, MLP 0.996) |
+| 1 | k=1 kill-test (k ∈ {1,2,4,8,16}, 5 seeds, param-matched) | ✅ done — SURVIVED | k=1 does not tie; k=16 gap 7 NMI pts on hard; k=1 accuracy cliff (–10 pts) on hard2 |
+| 2 | Codebook health (thresholded usage, EMA, dead-code reset, m sweep) | 🔜 next | alive anchors == true cardinality on ≥3/4 nodes |
 | 3 | Causal validation (clamp/ablate/swap interventions) | ⬜ | faithfulness ≥0.9 owned, ≤0.05 spillover |
 | 4 | Grounding ablation 5% → 0% | ⬜ | purity within 10 NMI pts of 5% (or honest curve) |
 | 5 | Hierarchy = subspace containment | ⬜ | implication >99%, acc drop <0.5 pts |
 | 6 | Real CLEVR → CUB vs CBM baseline | ⬜ | within 3 acc pts of CBM, strictly better faithfulness |
 | 7 | Write-up | ⬜ | three known objections pre-answered |
 
-## Current results of record (Phase 0, synthetic task, 5 seeds NOT yet run — single seed)
+## Current results of record (updated 2026-06-12)
 
-- DCN test acc **0.993** vs param-matched MLP **0.996** (~17k params each)
-- Node→attribute NMI: shape 0.90, color 0.94, size 0.77, material 0.84 (off-diag ≤ 0.08)
-- State accuracy: 0.90–0.97 per node
-- Rule "sphere ∧ yellow": hard violations **0.0**, soft mass 5e-5
-- Known issues: slack anchors don't die cleanly (→ Phase 2); routing graph readable but
-  not causally validated (→ Phase 3); single-seed numbers (re-run with 5 seeds before
-  citing anywhere)
+### Phase 0 — 5-seed rerun on canonical architecture (~16.9k params)
+- DCN test acc **0.991** [0.990, 0.995] vs MLP **0.996** [0.994, 0.997]
+- Own-purity NMI (median): shape/color/size/material, diag mean **0.915** [0.879, 0.949], max off-diag 0.093
+- State accuracy: 0.962–0.980 per node
+- Rule "sphere ∧ yellow": hard violations **0.0**, soft mass ~1e-6
+- Known issues: slack anchors not dying cleanly (alive 3–6 vs true 3/4/2/2 → Phase 2); routing not causally validated (→ Phase 3)
+
+### Phase 1 — k=1 kill-test (SURVIVED)
+Three task levels, k ∈ {1,2,4,8,16}, 5 seeds, param-matched:
+- **base task**: k=1 ties (task too easy; attributes linearly separable with 1 direction)
+- **hard task** (noise ×2 + size↔material correlation): k=1 purity 0.686 vs k=16 0.755 — **6.97 NMI pts gap, non-overlapping IQRs**
+- **hard2 task** (hard + continuous 2D position concept): k=1 accuracy **0.432** vs k>1 **0.540–0.550** (10+ pt cliff); k=1 purity 0.589 vs k=16 0.633
+- Kill criterion ("k=1 ties on all metrics"): **NOT triggered**
+- **k re-frozen at 8** (solid purity, no degradation, good param budget)
 
 ## Standing rules (enforce on every experiment — push back if violated)
 

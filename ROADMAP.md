@@ -25,22 +25,30 @@ causally validated (→ Phase 3), friendly synthetic data (→ Phase 6).
 
 ---
 
-## Phase 1 — The k=1 kill-test 🔜 (highest priority, ~1 day)
+## Phase 1 — The k=1 kill-test ✅ (done — SURVIVED, 2026-06-12)
 
 **Why first:** This is the load-bearing ablation. If a single vector per node does
 everything the subspace does, the architectural contribution evaporates and the project
 pivots before any more effort is spent.
 
-**What to do**
-- Train k ∈ {1, 2, 4, 8, 16}, all parameter-matched (shrink/grow elsewhere to equalize).
-- 5 seeds per setting (variance matters more than the mean at this scale).
-- Record: test accuracy, purity (NMI), state accuracy, rule violation, gradient stability.
+**What was done:** k ∈ {1, 2, 4, 8, 16}, parameter-matched, 5 seeds × 3 task levels.
 
-**Result we are looking for**
-- An interior optimum: k=1 measurably worse on purity and/or rule satisfaction
-  (target: ≥5 NMI points or ≥10x soft rule mass), large k plateauing or degrading.
-- Accuracy roughly flat across k (capacity is matched, so accuracy differences would
-  indicate optimization effects, not capacity).
+**Results summary:**
+
+| Task | k=1 purity | k=4 purity | k=16 purity | k=1 acc | k>1 acc | Verdict |
+|---|---|---|---|---|---|---|
+| base | 0.906 | 0.878 | 0.918 | 0.990 | 0.992 | k=1 ties (task too easy) |
+| hard | 0.686 [0.669,0.686] | 0.728 [0.725,0.734] | 0.755 [0.735,0.769] | 0.851 | 0.852 | k=1 loses 7 NMI pts to k=16 (non-overlapping IQRs) |
+| hard2 | 0.589 [0.584,0.595] | 0.627 [0.607,0.668] | 0.633 [0.630,0.636] | 0.432 | 0.540–0.550 | k=1 accuracy cliff (–10 pts) + 4.4 NMI pts loss |
+
+**Kill-criterion verdict:** k=1 does NOT tie on hardened tasks — it is consistently
+and significantly worse on purity (non-overlapping IQRs) and accuracy.
+
+**Headline 5-NMI-pt target honest caveat:** k=4 specifically missed (4.25 pts on hard,
+3.83 on hard2); k=16 exceeded it on hard (6.97 pts). k=4 is the weakest k>1 setting
+throughout — the subspace benefit saturates quickly.
+
+**k re-frozen at 8** (strong purity ~0.75–0.92, no degradation, good param budget).
 
 **Expected problems → what we do**
 
@@ -52,10 +60,11 @@ pivots before any more effort is spent.
 
 **Kill-criterion:** k=1 ties on all metrics on the hardened task across seeds → subspace
 framing is dropped (pivot above), Phases 5's containment work is redesigned or cut.
+*Status: NOT triggered.*
 
 ---
 
-## Phase 2 — Codebook health & anchor death (P0-a fix, ~1–2 days)
+## Phase 2 — Codebook health & anchor death (P0-a fix, ~1–2 days) 🔜
 
 **What to do**
 - Replace argmax-usage metric with thresholded usage (anchor "alive" if it wins >1% of samples).
@@ -213,11 +222,11 @@ span(M_child) ⊆ span(M_parent)) and the strongest novelty hook — IF Phase 1 
 
 ## Result targets at a glance
 
-| Phase | Primary number | Target |
-|---|---|---|
-| 1 | Purity gap, k=4 vs k=1 | ≥ 5 NMI pts (else pivot) |
-| 2 | Alive anchors vs true cardinality | exact match on ≥ 3/4 nodes |
-| 3 | Intervention faithfulness | ≥ 0.9 owned / ≤ 0.05 spillover |
-| 4 | Purity at 0% grounding | within 10 NMI pts of 5% (or honest curve) |
-| 5 | Implication satisfaction | > 99%, accuracy drop < 0.5 pts |
-| 6 | vs CBM on CUB | accuracy within 3 pts, faithfulness strictly better |
+| Phase | Primary number | Target | Status |
+|---|---|---|---|
+| 1 | Purity gap, k=4 vs k=1 | ≥ 5 NMI pts (else pivot) | ✅ SURVIVED (k=1 does not tie; k=16 gap 7 NMI pts on hard; k=1 accuracy cliff on hard2) |
+| 2 | Alive anchors vs true cardinality | exact match on ≥ 3/4 nodes | 🔜 next |
+| 3 | Intervention faithfulness | ≥ 0.9 owned / ≤ 0.05 spillover | ⬜ |
+| 4 | Purity at 0% grounding | within 10 NMI pts of 5% (or honest curve) | ⬜ |
+| 5 | Implication satisfaction | > 99%, accuracy drop < 0.5 pts | ⬜ |
+| 6 | vs CBM on CUB | accuracy within 3 pts, faithfulness strictly better | ⬜ |

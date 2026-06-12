@@ -1,0 +1,139 @@
+{
+  "config": {
+    "k": 2,
+    "hidden": 69,
+    "task": "hard2"
+  },
+  "seed": 2,
+  "dcn_params": 42692,
+  "dcn_test_acc": 0.5152000188827515,
+  "purity_matrix": [
+    [
+      0.768,
+      0.053,
+      0.006,
+      0.011,
+      0.012
+    ],
+    [
+      0.068,
+      0.712,
+      0.004,
+      0.003,
+      0.009
+    ],
+    [
+      0.035,
+      0.033,
+      0.741,
+      0.255,
+      0.015
+    ],
+    [
+      0.014,
+      0.018,
+      0.321,
+      0.566,
+      0.008
+    ],
+    [
+      0.027,
+      0.039,
+      0.009,
+      0.009,
+      0.24
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material",
+    "node_4": "position"
+  },
+  "purity_diag_mean": 0.6055890146778496,
+  "purity_offdiag_max": 0.32100704866249713,
+  "state_accuracy_per_node": {
+    "shape": 0.89,
+    "color": 0.857,
+    "size": 0.891,
+    "material": 0.85,
+    "position": 0.513
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 5,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "position",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 0.0002747259277384728,
+  "mean_routing_graph": [
+    [
+      0.30000001192092896,
+      0.18000000715255737,
+      0.17000000178813934,
+      0.18000000715255737,
+      0.17000000178813934
+    ],
+    [
+      0.25,
+      0.23000000417232513,
+      0.15000000596046448,
+      0.2199999988079071,
+      0.14000000059604645
+    ],
+    [
+      0.1599999964237213,
+      0.1599999964237213,
+      0.30000001192092896,
+      0.23000000417232513,
+      0.15000000596046448
+    ],
+    [
+      0.11999999731779099,
+      0.11999999731779099,
+      0.18000000715255737,
+      0.44999998807907104,
+      0.12999999523162842
+    ],
+    [
+      0.20000000298023224,
+      0.18000000715255737,
+      0.18000000715255737,
+      0.20000000298023224,
+      0.23000000417232513
+    ]
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "dcn_params": 16850,
+  "mlp_params": 17136,
+  "dcn_test_acc": 0.9927999973297119,
+  "mlp_test_acc": 0.9959999918937683,
+  "purity_matrix": [
+    [
+      0.9,
+      0.084,
+      0.026,
+      0.052
+    ],
+    [
+      0.069,
+      0.942,
+      0.006,
+      0.016
+    ],
+    [
+      0.082,
+      0.062,
+      0.773,
+      0.084
+    ],
+    [
+      0.048,
+      0.053,
+      0.058,
+      0.838
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.8631170143859623,
+  "state_accuracy_per_node": {
+    "shape": 0.932,
+    "color": 0.972,
+    "size": 0.896,
+    "material": 0.93
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_used": 5,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_used": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_used": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_used": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 4.765595440403558e-05,
+  "uncertainty_demo": {
+    "true_shape": "cylinder",
+    "superposed_p_shape": [
+      0.0,
+      0.0,
+      0.436
+    ]
+  },
+  "mean_routing_graph": [
+    [
+      0.46000000834465027,
+      0.23999999463558197,
+      0.15000000596046448,
+      0.15000000596046448
+    ],
+    [
+      0.2800000011920929,
+      0.23999999463558197,
+      0.25999999046325684,
+      0.2199999988079071
+    ],
+    [
+      0.12999999523162842,
+      0.10999999940395355,
+      0.6600000262260437,
+      0.10000000149011612
+    ],
+    [
+      0.28999999165534973,
+      0.3499999940395355,
+      0.10999999940395355,
+      0.25
+    ]
+  ]
+}

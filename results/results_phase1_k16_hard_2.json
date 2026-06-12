@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 16,
+    "hidden": 57,
+    "hardened": true
+  },
+  "seed": 2,
+  "dcn_params": 16771,
+  "dcn_test_acc": 0.8596000075340271,
+  "purity_matrix": [
+    [
+      0.781,
+      0.078,
+      0.021,
+      0.014
+    ],
+    [
+      0.062,
+      0.763,
+      0.005,
+      0.003
+    ],
+    [
+      0.044,
+      0.137,
+      0.722,
+      0.211
+    ],
+    [
+      0.022,
+      0.071,
+      0.214,
+      0.608
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.7183999069394126,
+  "purity_offdiag_max": 0.21382148189429862,
+  "state_accuracy_per_node": {
+    "shape": 0.903,
+    "color": 0.9,
+    "size": 0.872,
+    "material": 0.882
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 5,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 0.00024205908994190395,
+  "mean_routing_graph": [
+    [
+      0.7799999713897705,
+      0.11999999731779099,
+      0.05000000074505806,
+      0.05000000074505806
+    ],
+    [
+      0.09000000357627869,
+      0.8600000143051147,
+      0.029999999329447746,
+      0.019999999552965164
+    ],
+    [
+      0.20999999344348907,
+      0.28999999165534973,
+      0.33000001311302185,
+      0.17000000178813934
+    ],
+    [
+      0.14000000059604645,
+      0.23999999463558197,
+      0.20000000298023224,
+      0.41999998688697815
+    ]
+  ]
+}

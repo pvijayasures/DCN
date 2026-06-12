@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 2,
+    "hidden": 69,
+    "hardened": true
+  },
+  "seed": 1,
+  "dcn_params": 16923,
+  "dcn_test_acc": 0.8568000197410583,
+  "purity_matrix": [
+    [
+      0.789,
+      0.059,
+      0.004,
+      0.005
+    ],
+    [
+      0.065,
+      0.725,
+      0.006,
+      0.006
+    ],
+    [
+      0.025,
+      0.023,
+      0.856,
+      0.272
+    ],
+    [
+      0.015,
+      0.019,
+      0.24,
+      0.684
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.7632927249387578,
+  "purity_offdiag_max": 0.27150938079845843,
+  "state_accuracy_per_node": {
+    "shape": 0.901,
+    "color": 0.87,
+    "size": 0.956,
+    "material": 0.9
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 5,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 5,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 0.00024643330834805965,
+  "mean_routing_graph": [
+    [
+      0.10000000149011612,
+      0.23999999463558197,
+      0.25999999046325684,
+      0.38999998569488525
+    ],
+    [
+      0.2800000011920929,
+      0.23999999463558197,
+      0.25,
+      0.23000000417232513
+    ],
+    [
+      0.38999998569488525,
+      0.30000001192092896,
+      0.07999999821186066,
+      0.23000000417232513
+    ],
+    [
+      0.38999998569488525,
+      0.2800000011920929,
+      0.2199999988079071,
+      0.10000000149011612
+    ]
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 4,
+    "hidden": 67,
+    "hardened": true
+  },
+  "seed": 4,
+  "dcn_params": 16827,
+  "dcn_test_acc": 0.8543999791145325,
+  "purity_matrix": [
+    [
+      0.808,
+      0.071,
+      0.007,
+      0.009
+    ],
+    [
+      0.061,
+      0.742,
+      0.008,
+      0.013
+    ],
+    [
+      0.028,
+      0.082,
+      0.739,
+      0.252
+    ],
+    [
+      0.028,
+      0.068,
+      0.226,
+      0.612
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.725167439021197,
+  "purity_offdiag_max": 0.25206417442478224,
+  "state_accuracy_per_node": {
+    "shape": 0.935,
+    "color": 0.885,
+    "size": 0.869,
+    "material": 0.864
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.00039999998989515007,
+  "rule_violation_soft_mass": 0.0010637000668793917,
+  "mean_routing_graph": [
+    [
+      0.1899999976158142,
+      0.20999999344348907,
+      0.33000001311302185,
+      0.27000001072883606
+    ],
+    [
+      0.03999999910593033,
+      0.8100000023841858,
+      0.07000000029802322,
+      0.07999999821186066
+    ],
+    [
+      0.17000000178813934,
+      0.3700000047683716,
+      0.3700000047683716,
+      0.09000000357627869
+    ],
+    [
+      0.2199999988079071,
+      0.23999999463558197,
+      0.23000000417232513,
+      0.3100000023841858
+    ]
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 4,
+    "hidden": 67,
+    "hardened": true
+  },
+  "seed": 1,
+  "dcn_params": 16827,
+  "dcn_test_acc": 0.8356000185012817,
+  "purity_matrix": [
+    [
+      0.762,
+      0.058,
+      0.013,
+      0.007
+    ],
+    [
+      0.073,
+      0.723,
+      0.002,
+      0.001
+    ],
+    [
+      0.043,
+      0.061,
+      0.785,
+      0.237
+    ],
+    [
+      0.046,
+      0.024,
+      0.225,
+      0.643
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.7282433951234656,
+  "purity_offdiag_max": 0.2373913763446779,
+  "state_accuracy_per_node": {
+    "shape": 0.907,
+    "color": 0.876,
+    "size": 0.908,
+    "material": 0.907
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.00039999998989515007,
+  "rule_violation_soft_mass": 0.00026468970463611186,
+  "mean_routing_graph": [
+    [
+      0.7400000095367432,
+      0.09000000357627869,
+      0.07000000029802322,
+      0.10999999940395355
+    ],
+    [
+      0.05999999865889549,
+      0.8399999737739563,
+      0.05000000074505806,
+      0.05999999865889549
+    ],
+    [
+      0.18000000715255737,
+      0.07999999821186066,
+      0.6100000143051147,
+      0.12999999523162842
+    ],
+    [
+      0.12999999523162842,
+      0.3100000023841858,
+      0.09000000357627869,
+      0.47999998927116394
+    ]
+  ]
+}

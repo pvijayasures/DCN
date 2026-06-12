@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 2,
+    "hidden": 69,
+    "hardened": true
+  },
+  "seed": 4,
+  "dcn_params": 16923,
+  "dcn_test_acc": 0.8587999939918518,
+  "purity_matrix": [
+    [
+      0.82,
+      0.058,
+      0.004,
+      0.008
+    ],
+    [
+      0.063,
+      0.732,
+      0.01,
+      0.023
+    ],
+    [
+      0.021,
+      0.036,
+      0.868,
+      0.263
+    ],
+    [
+      0.073,
+      0.059,
+      0.204,
+      0.62
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.7602515118031653,
+  "purity_offdiag_max": 0.26339973311802783,
+  "state_accuracy_per_node": {
+    "shape": 0.943,
+    "color": 0.866,
+    "size": 0.956,
+    "material": 0.848
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 3,
+      "anchors_used_argmax": 4,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.00039999998989515007,
+  "rule_violation_soft_mass": 0.0006039456930011511,
+  "mean_routing_graph": [
+    [
+      0.019999999552965164,
+      0.15000000596046448,
+      0.4000000059604645,
+      0.4300000071525574
+    ],
+    [
+      0.15000000596046448,
+      0.2199999988079071,
+      0.30000001192092896,
+      0.33000001311302185
+    ],
+    [
+      0.15000000596046448,
+      0.14000000059604645,
+      0.029999999329447746,
+      0.6800000071525574
+    ],
+    [
+      0.09000000357627869,
+      0.09000000357627869,
+      0.07999999821186066,
+      0.75
+    ]
+  ]
+}

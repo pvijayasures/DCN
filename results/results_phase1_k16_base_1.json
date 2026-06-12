@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 16,
+    "hidden": 57,
+    "hardened": false
+  },
+  "seed": 1,
+  "dcn_params": 16771,
+  "dcn_test_acc": 0.9927999973297119,
+  "purity_matrix": [
+    [
+      0.952,
+      0.064,
+      0.009,
+      0.004
+    ],
+    [
+      0.061,
+      0.946,
+      0.019,
+      0.018
+    ],
+    [
+      0.05,
+      0.037,
+      0.83,
+      0.068
+    ],
+    [
+      0.063,
+      0.111,
+      0.043,
+      0.773
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.8754661520750242,
+  "purity_offdiag_max": 0.11050738804799645,
+  "state_accuracy_per_node": {
+    "shape": 0.983,
+    "color": 0.967,
+    "size": 0.921,
+    "material": 0.89
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 3,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 9.887830856314395e-06,
+  "mean_routing_graph": [
+    [
+      0.20000000298023224,
+      0.20999999344348907,
+      0.28999999165534973,
+      0.30000001192092896
+    ],
+    [
+      0.23999999463558197,
+      0.3799999952316284,
+      0.20999999344348907,
+      0.18000000715255737
+    ],
+    [
+      0.07999999821186066,
+      0.10999999940395355,
+      0.6399999856948853,
+      0.17000000178813934
+    ],
+    [
+      0.029999999329447746,
+      0.07000000029802322,
+      0.25999999046325684,
+      0.6499999761581421
+    ]
+  ]
+}

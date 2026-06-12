@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 1,
+    "hidden": 69,
+    "hardened": true
+  },
+  "seed": 4,
+  "dcn_params": 16771,
+  "dcn_test_acc": 0.8356000185012817,
+  "purity_matrix": [
+    [
+      0.754,
+      0.094,
+      0.004,
+      0.008
+    ],
+    [
+      0.069,
+      0.709,
+      0.025,
+      0.013
+    ],
+    [
+      0.039,
+      0.142,
+      0.676,
+      0.335
+    ],
+    [
+      0.045,
+      0.102,
+      0.453,
+      0.535
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.6685623466825493,
+  "purity_offdiag_max": 0.4525813822095987,
+  "state_accuracy_per_node": {
+    "shape": 0.892,
+    "color": 0.864,
+    "size": 0.834,
+    "material": 0.795
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 0.00023881063680164516,
+  "mean_routing_graph": [
+    [
+      0.14000000059604645,
+      0.27000001072883606,
+      0.36000001430511475,
+      0.23000000417232513
+    ],
+    [
+      0.09000000357627869,
+      0.699999988079071,
+      0.11999999731779099,
+      0.09000000357627869
+    ],
+    [
+      0.23999999463558197,
+      0.2800000011920929,
+      0.1599999964237213,
+      0.3199999928474426
+    ],
+    [
+      0.1899999976158142,
+      0.17000000178813934,
+      0.15000000596046448,
+      0.49000000953674316
+    ]
+  ]
+}

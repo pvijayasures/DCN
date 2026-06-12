@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 16,
+    "hidden": 57,
+    "hardened": false
+  },
+  "seed": 3,
+  "dcn_params": 16771,
+  "dcn_test_acc": 0.9955999851226807,
+  "purity_matrix": [
+    [
+      0.962,
+      0.062,
+      0.015,
+      0.009
+    ],
+    [
+      0.064,
+      0.965,
+      0.007,
+      0.006
+    ],
+    [
+      0.026,
+      0.02,
+      0.925,
+      0.015
+    ],
+    [
+      0.087,
+      0.037,
+      0.061,
+      0.845
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.9245352205746037,
+  "purity_offdiag_max": 0.08677843352276629,
+  "state_accuracy_per_node": {
+    "shape": 0.98,
+    "color": 0.985,
+    "size": 0.976,
+    "material": 0.933
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 5,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 3,
+      "anchors_used_argmax": 5,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 4,
+      "anchors_used_argmax": 5,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 1.094109833843504e-07,
+  "mean_routing_graph": [
+    [
+      0.7900000214576721,
+      0.09000000357627869,
+      0.09000000357627869,
+      0.029999999329447746
+    ],
+    [
+      0.10999999940395355,
+      0.7300000190734863,
+      0.14000000059604645,
+      0.019999999552965164
+    ],
+    [
+      0.07999999821186066,
+      0.12999999523162842,
+      0.7699999809265137,
+      0.009999999776482582
+    ],
+    [
+      0.36000001430511475,
+      0.20999999344348907,
+      0.25999999046325684,
+      0.17000000178813934
+    ]
+  ]
+}

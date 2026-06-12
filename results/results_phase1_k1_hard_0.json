@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 1,
+    "hidden": 69,
+    "hardened": true
+  },
+  "seed": 0,
+  "dcn_params": 16771,
+  "dcn_test_acc": 0.857200026512146,
+  "purity_matrix": [
+    [
+      0.779,
+      0.096,
+      0.015,
+      0.014
+    ],
+    [
+      0.079,
+      0.751,
+      0.026,
+      0.008
+    ],
+    [
+      0.03,
+      0.197,
+      0.583,
+      0.21
+    ],
+    [
+      0.037,
+      0.036,
+      0.446,
+      0.554
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.6668642554628934,
+  "purity_offdiag_max": 0.4456034397264097,
+  "state_accuracy_per_node": {
+    "shape": 0.889,
+    "color": 0.876,
+    "size": 0.641,
+    "material": 0.78
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0,
+  "rule_violation_soft_mass": 7.472660217899829e-05,
+  "mean_routing_graph": [
+    [
+      0.25,
+      0.23999999463558197,
+      0.25,
+      0.25
+    ],
+    [
+      0.05999999865889549,
+      0.7400000095367432,
+      0.15000000596046448,
+      0.05999999865889549
+    ],
+    [
+      0.17000000178813934,
+      0.20000000298023224,
+      0.44999998807907104,
+      0.18000000715255737
+    ],
+    [
+      0.28999999165534973,
+      0.3199999928474426,
+      0.18000000715255737,
+      0.20000000298023224
+    ]
+  ]
+}

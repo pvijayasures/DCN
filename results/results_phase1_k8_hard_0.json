@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 8,
+    "hidden": 64,
+    "hardened": true
+  },
+  "seed": 0,
+  "dcn_params": 16850,
+  "dcn_test_acc": 0.864799976348877,
+  "purity_matrix": [
+    [
+      0.786,
+      0.077,
+      0.027,
+      0.018
+    ],
+    [
+      0.066,
+      0.78,
+      0.007,
+      0.01
+    ],
+    [
+      0.051,
+      0.058,
+      0.791,
+      0.215
+    ],
+    [
+      0.031,
+      0.037,
+      0.247,
+      0.603
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.7401552463578764,
+  "purity_offdiag_max": 0.24730696362669854,
+  "state_accuracy_per_node": {
+    "shape": 0.902,
+    "color": 0.913,
+    "size": 0.904,
+    "material": 0.879
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.0012000000569969416,
+  "rule_violation_soft_mass": 0.0012409767368808389,
+  "mean_routing_graph": [
+    [
+      0.3400000035762787,
+      0.2199999988079071,
+      0.2199999988079071,
+      0.2199999988079071
+    ],
+    [
+      0.3400000035762787,
+      0.25,
+      0.20000000298023224,
+      0.2199999988079071
+    ],
+    [
+      0.18000000715255737,
+      0.3199999928474426,
+      0.23999999463558197,
+      0.25
+    ],
+    [
+      0.18000000715255737,
+      0.36000001430511475,
+      0.15000000596046448,
+      0.3100000023841858
+    ]
+  ]
+}

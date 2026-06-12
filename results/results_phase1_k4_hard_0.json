@@ -1,0 +1,108 @@
+{
+  "config": {
+    "k": 4,
+    "hidden": 67,
+    "hardened": true
+  },
+  "seed": 0,
+  "dcn_params": 16827,
+  "dcn_test_acc": 0.8791999816894531,
+  "purity_matrix": [
+    [
+      0.807,
+      0.076,
+      0.005,
+      0.002
+    ],
+    [
+      0.062,
+      0.776,
+      0.003,
+      0.004
+    ],
+    [
+      0.061,
+      0.055,
+      0.75,
+      0.207
+    ],
+    [
+      0.044,
+      0.073,
+      0.204,
+      0.604
+    ]
+  ],
+  "purity_best_match": {
+    "node_0": "shape",
+    "node_1": "color",
+    "node_2": "size",
+    "node_3": "material"
+  },
+  "purity_diag_mean": 0.7341297375668363,
+  "purity_offdiag_max": 0.2073720927458434,
+  "state_accuracy_per_node": {
+    "shape": 0.926,
+    "color": 0.912,
+    "size": 0.883,
+    "material": 0.848
+  },
+  "codebook_usage": [
+    {
+      "node": "shape",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 3,
+      "anchors_available": 6
+    },
+    {
+      "node": "color",
+      "anchors_alive": 5,
+      "anchors_used_argmax": 6,
+      "true_values": 4,
+      "anchors_available": 6
+    },
+    {
+      "node": "size",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    },
+    {
+      "node": "material",
+      "anchors_alive": 6,
+      "anchors_used_argmax": 6,
+      "true_values": 2,
+      "anchors_available": 6
+    }
+  ],
+  "rule_violation_rate_hard": 0.00039999998989515007,
+  "rule_violation_soft_mass": 0.0005150225479155779,
+  "mean_routing_graph": [
+    [
+      0.550000011920929,
+      0.1599999964237213,
+      0.18000000715255737,
+      0.11999999731779099
+    ],
+    [
+      0.20999999344348907,
+      0.38999998569488525,
+      0.2199999988079071,
+      0.18000000715255737
+    ],
+    [
+      0.20000000298023224,
+      0.18000000715255737,
+      0.5299999713897705,
+      0.10000000149011612
+    ],
+    [
+      0.17000000178813934,
+      0.17000000178813934,
+      0.11999999731779099,
+      0.5299999713897705
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "config": {
+    "kind": "mlp",
+    "k": null,
+    "hidden": 95,
+    "hardened": false
+  },
+  "seed": 4,
+  "mlp_test_acc": 0.996399998664856,
+  "mlp_params": 16863
+}

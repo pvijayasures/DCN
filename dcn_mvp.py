@@ -47,6 +47,7 @@ import json
 import math
 import os
 from concurrent.futures import ProcessPoolExecutor
+from multiprocessing import get_context
 
 import numpy as np
 import torch
@@ -347,7 +348,8 @@ def run_phase0(seeds, outdir):
     mlp_h = match_mlp_hidden()
     jobs = [("dcn", s, 8, 64, False) for s in seeds] + \
            [("mlp", s, None, mlp_h, False) for s in seeds]
-    with ProcessPoolExecutor(max_workers=4) as ex:
+    # spawn (not fork): forking after torch model construction deadlocks in OpenMP
+    with ProcessPoolExecutor(max_workers=4, mp_context=get_context("spawn")) as ex:
         results = list(ex.map(_run_job, jobs))
     dcn_r = {s: r for kind, s, _, _, r in results if kind == "dcn"}
     mlp_r = {s: r for kind, s, _, _, r in results if kind == "mlp"}
@@ -382,7 +384,7 @@ def run_phase0(seeds, outdir):
 def run_phase1(seeds, outdir, hardened=False, ks=(1, 2, 4, 8, 16)):
     desc_suffix = "hard" if hardened else "base"
     jobs = [("dcn", s, k, match_dcn_hidden(k), hardened) for k in ks for s in seeds]
-    with ProcessPoolExecutor(max_workers=4) as ex:
+    with ProcessPoolExecutor(max_workers=4, mp_context=get_context("spawn")) as ex:
         results = list(ex.map(_run_job, jobs))
     by_k = {k: {} for k in ks}
     for kind, s, k, hidden, r in results:
